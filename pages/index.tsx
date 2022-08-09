@@ -8,11 +8,13 @@ import Link from "next/link";
 const Home = ({
   allPostsData,
 }: {
-  allPostsData: {
-    date: string;
-    title: string;
-    id: string;
-  };
+  allPostsData: [
+    {
+      date: string;
+      title: string;
+      id: string;
+    }
+  ];
 }) => {
   return (
     <div>
