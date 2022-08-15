@@ -38,6 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   console.log("params", params);
+  // TODO: params 오류 찾기
   const postData = await getPostData(params.id as string);
   return {
     props: {
